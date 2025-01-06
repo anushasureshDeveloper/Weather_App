@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+    border-radius: 10px;
+    width: 800px;;
+    height: 800px;
+    color: rgb(207, 207, 78);
+    background: black;
+    text-align: center;
+   justify-content: center;
+   align-items:flex-start;
+    margin: auto;
+    padding: auto;
+}
+.p{
+    text-align: center;
+    color: black;
+
+}
+/* .icons{
+ white-space-collapse: break-spaces;
+}
+img{
+    background-image: url();
+    background-size: cover;
+    background-attachment: fixed;
+} */

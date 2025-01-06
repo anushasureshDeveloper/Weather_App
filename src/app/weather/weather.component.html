@@ -1,0 +1,33 @@
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<!-- <script src="https://cdn.tailwindcss.com"></script> --> 
+<div class="container ">
+
+  <div class="circle">
+    <h1>Weather Application</h1>
+    <form>
+        <input type="text" name="cityName" placeholder="Enter a city name " [(ngModel)]="city">
+        <button type="button" (click)="getWeather()">Get Weather Details</button>
+    </form>
+   
+    <div *ngIf="weatherData">
+    <h3>{{weatherData.name}}</h3>
+    <div class="icons">
+    <i class="fa fa-cloud" aria-hidden="true"></i><i class="fa fa-sun-o" aria-hidden="true"></i><i class="fa fa-tint" aria-hidden="true"></i></div>
+    <p>Temperature:{{weatherData.main.temp}}</p>
+    <p>Humidity:{{weatherData.main.humidity}}</p>
+    <p>feels like:{{weatherData.main.feels_like}}</p> 
+     <p>weather:{{weatherData.weather[0].description}}</p> 
+   
+      </div>
+<div class="card">
+    <button type="button" (click)="getLatLon()">refresh</button>
+
+
+<!-- 
+    <p>Temperature:{{weather.main.temp}}</p> -->
+    <!-- <p>Humidity:{{weather.main.humidity}}</p> -->
+    <!-- <i class="fa fa-cloud" aria-hidden="true"></i> <i class="fa fa-sun-o" aria-hidden="true"></i><i class="fa fa-tint" aria-hidden="true"></i> -->
+
+</div>
+</div>
+</div>
