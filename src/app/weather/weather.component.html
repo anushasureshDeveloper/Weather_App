@@ -5,8 +5,8 @@
   <div class="circle">
     <h1>Weather Application</h1>
     <form>
-        <input type="text" name="cityName" placeholder="Enter a city name " [(ngModel)]="city">
-        <button type="button" (click)="getWeather()">Get Weather Details</button>
+        <input type="text" name="cityName" placeholder="Enter a city name " [(ngModel)]="city"><br><br>
+        <button type="button" (click)="getWeather()">Get Weather Details</button><br><br>
     </form>
    
     <div *ngIf="weatherData">
